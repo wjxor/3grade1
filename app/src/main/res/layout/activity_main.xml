@@ -7,11 +7,18 @@
     tools:context=".MainActivity"
     android:orientation="vertical">
 
-    <TextView
-        android:id="@+id/textViewLoginedMemberName"
+    <ImageView
+        android:id="@+id/imageViewTop"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:layout_gravity="center"
+        android:layout_margin="15dp"
+        android:scaleType="centerCrop" />
+
+    <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:gravity="center"
-        android:textAppearance="@style/TextAppearance.AppCompat.Title" />
+        android:onClick="buttonPickImageClicked"
+        android:text="이미지 선택" />
 
 </LinearLayout>
